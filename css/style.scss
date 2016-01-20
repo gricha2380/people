@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
+/* PEOPLE
+============================================================================= */
+
+.page-people {
+    background: #E59400;
+    color: #a55400;
+    position: relative;
+    .body-dark {
+        background: #a55400;
+    }
+    .diagonalborder::before {
+        background: #a55400;
+    }
+}
+
+.people-header {
+    background: url(../img/faces.png);
+    text-align: center;
+    position: relative;
+    height: 500px;
+    padding: 180px 0px 0;
+    background-position: 100% 0%;
+    background-attachment: fixed;
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+        font-size: 100px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+.people-header-holder {
+    z-index: 1;
+    position: inherit;
+}
+
+.people-icon {
+    animation-name: people-animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people-animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.thank-box {
+    padding: 50px 30px;
+    width: 900px;
+    margin-top: 80px;
+    h3 {
+        margin-top: 0;
+        margin: -10px 10px 10px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 25px;
+    }
+    h2 {
+        margin-top: 0;
+        color: rgba(0, 0, 0, .5);
+        font-family: "Lato", sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+    }
+}
+
+.body-content {
+    min-height: 600px;
+    padding: 50px;
+}
+
+.center-grey {
+    background: #f2f2f2;
+}
+
+.slider-holder {
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.slider-description {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 250px;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    padding: 5px;
+    width: 610px;
+    margin: auto;
+    height: 400px;
+    display: inline-block;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 15px #999;
+    overflow: hidden;
+    height: 400px;
+}
+
+.arrows {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.arrows img {
+    height: 32px;
+}
